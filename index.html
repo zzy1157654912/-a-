@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<style>
+	@keyframes shanye{
+		from{transform: rotateY(0deg);}
+		to{transform: rotateY(360deg);}
+	}
+	@keyframes dlam{
+		from{top:300px;}
+		to{top: 100px;
+		  }
+	}
+	.dlam{width: 350px;
+	      height: 800px;
+		  background-color: white;
+		  left: 200px;
+		  position: relative;
+		  top: 400px;
+		  animation: dlam 3s;
+		  animation-direction: alternate;
+		  animation-iteration-count: infinite;}
+	.tou {width: 300px;
+	      height: 280px;
+		  background-color: dodgerblue;
+		  border-radius: 50%;
+		  border: solid;
+		  position: relative;
+		  z-index: 200;}
+    .face {width: 260px;
+	       height:240px;
+		   border-radius: 50%;
+		   background-color: white;
+		   margin-left: 18px;
+		   bottom: -40px;
+		   position: relative;
+		   border: solid;}
+	.eyes1 {width: 50px;
+	       height: 60px;
+		   background-color: white;
+		   border: solid;
+		   border-radius: 50%;
+		   position: relative;
+		   bottom: 234px;
+		   left: 96px;
+		   }
+	.eyes2 {width: 50px;
+	        height: 60px;
+			background-color: white;
+			border: solid;
+			border-radius: 50%;
+			position: relative;
+			bottom: 300px;
+			left: 150px;}
+	.yj1 {width: 15px;
+	      height: 25px;
+		  background-color: black;
+		  border-radius: 50%;
+		  position: relative;
+		  left: 30px;
+		  bottom: -22px;}
+	.yb {width: 5px;
+	     height: 8px;
+		 background-color: white;
+		 border-radius: 50%;
+		 position: relative;
+		 left: 7px;
+		 bottom: -10px;}
+	.yj2 {
+    width: 10px;
+    height: 15px;
+    border: 2px solid black;
+    border-radius: 100% 0 0 100%/50%;
+    border-right: none;
+    transform:rotate(90deg);
+    position: relative;
+    left: 15px;
+	bottom: -30px;
+}
+	.nose {width: 35px;
+	       height: 35px;
+		   border-radius: 50%;
+		   background-color: crimson;
+		   position: relative;
+		   bottom: 313px;
+		   left: 130px;
+		   border: solid;}
+	.by {width: 12px;
+         height: 12px;
+		 border-radius: 50%;
+		 background-color: white;
+		 position: relative;
+		 bottom:-10px;
+		 left: 12px;
+		 }
+	.neck {width: 200px;
+	      height: 15px;
+		  background-color: crimson;
+		  border: solid;
+		  position: relative;
+		  left: 50px;
+		  bottom: 35px;
+		  border-radius: 50%/20%;
+		  z-index: 9999;}
+	.shengti {width: 220px ;
+	          height: 165px;
+			  background-color: dodgerblue;
+			  border: solid;
+			  border-radius: 50%/7%;
+			  position:relative ;
+			  left: 35px;
+			  bottom: 25px;
+			  border-top:hidden ;
+			  z-index: 500;
+			  
+			  }
+	.ld {width: 40px;
+	     height: 40px;
+		 border-radius: 50%;
+		 border: solid;
+		 background-color: gold;
+		 position: relative;
+		 left: 128px;
+		 bottom: 213px;
+		 z-index: 9999;
+		 transform: rotate(10dge);}
+	.xld {width: 10px;
+	      height: 8px;
+		  border-radius: 50%;
+		  border: solid;
+		  background-color: darkgoldenrod;
+		  position: relative;
+		  left: 13px;
+		  bottom: -20px;
+		  }
+	.dz {width: 37px;
+	     height: 3px;
+		 border: solid;
+		 background-color: gold;
+		 border-radius: 50%/40%;
+		 bottom: 5px;
+		 position: relative;
+		 left: -1px;
+		 transform: rotate(-2deg);
+		 }
+	.xd {width: 3px;
+	     height: 10px;
+		 background-color: black;
+		 position: relative;
+		 left: 19px;
+		 bottom: -10px;}
+	.xiao {
+    width: 70px;
+    height: 220px;
+    border: 2px solid black;
+    border-radius: 100% 0 0 100%/50%;
+    border-right: none;
+    transform: rotate(-90deg);
+    position: relative;
+    left: 95px;
+	bottom: -19px;}
+	.bm {width: 0px;
+	    height: 110px;
+	    border: 3px solid black;
+	    border-right: none;
+	    transform: rotate(0deg);
+	    position: relative;
+	    left: 129px;
+		bottom: 175px;}
+	.lefthz1 {width: 0px;
+	    height: 75px;
+	    border: 2px solid black;
+	    border-right: none;
+	    transform: rotate(115deg);
+	    position: relative;
+	    left: 70px;
+		bottom: 320px;}
+	.righthz1 {width: 0px;
+	    height: 75px;
+	    border: 2px solid black;
+	    border-right: none;
+	    transform: rotate(240deg);
+	    position: relative;
+	    left: 190px;
+		bottom: 575px;}
+	.lefthz2 {width: 0px;
+	    height: 90px;
+	    border: 2px solid black;
+	    border-right: none;
+	    transform: rotate(90deg);
+	    position: relative;
+	    left: 55px;
+		bottom: 373px;}
+	.righthz2 {width: 0px;
+	    height: 90px;
+	    border: 2px solid black;
+	    border-right: none;
+	    transform: rotate(90deg);
+	    position: relative;
+	    left: 205px;
+		bottom: 625px;}
+	.lefthz3 {width: 0px;
+	    height: 75px;
+	    border: 2px solid black;
+	    border-right: none;
+	    transform: rotate(255deg);
+	    position: relative;
+	    left: 60px;
+		bottom: 420px;}
+	.righthz3 {width: 0px;
+	    height: 75px;
+	    border: 2px solid black;
+	    border-right: none;
+	    transform: rotate(110deg);
+	    position: relative;
+	    left: 197px;
+		bottom: 670px;}
+	.dudou {width: 220px;
+	        height: 135px;
+			background-color: dodgerblue;
+			position: relative;
+			left: 37.5px;
+			bottom: 255px;
+			z-index: 550;}
+	.dabaiyuan {width: 175px;
+	            height: 145px;
+				border-radius: 50%;
+				background-color: white;
+				position: relative;
+				left: 22px;
+				bottom: 10px;
+				border: solid;}
+	.baibaodai {width: 55px;
+    height: 120px;
+    border: 2px solid black;
+    border-radius: 100% 0 0 100%/50%;
+    border-right: none;
+    transform: rotate(-90deg);
+    position: relative;
+    left: 87px;
+	bottom: 120px;}
+	.baibaodai2 {width: 0px;
+    height: 115px;
+    border: 2px solid black;
+    border-right: none;
+    transform: rotate(90deg);
+    position: relative;
+    left: 115px;
+	bottom: 270px;
+	border-radius: 50%/40%;}
+	.tuifeng1 {width: 0px;
+    height: 17px;
+    border: 3px solid black;
+    border-right: none;
+    transform: rotate(0deg);
+    position: relative;
+    left: 113px;
+	bottom: -142px;
+	border-radius: 50%/10%;
+	z-index: 9999;}
+	.tuifeng2 {width: 0px;
+    height: 17px;
+    border: 3px solid black;
+    border-right: none;
+    transform: rotate(90deg);
+    position: relative;
+    left: 113px;
+	bottom: -106px;
+	border-radius: 50%/10%;
+	z-index: 9999;}
+	.lefthand {width: 140px;
+	           height: 55px;
+			   background-color: dodgerblue;
+			   border-radius: 50%;
+			   transform: rotate(40deg);
+			   position: relative;
+			   bottom: 415px;
+			   border: solid;
+			   left: -45px; }
+	.leftwhite {width: 50px;
+	            height: 50px;
+				background-color: white;
+				border-radius: 50%;
+				border: solid;
+				position: relative;
+				bottom: 520px;
+				left: -50px;}
+	.righthand {width: 140px;
+	            height: 90px;
+				border: solid;
+				border-radius: 50%;
+				background-color: dodgerblue;
+				transform: rotate(30deg);
+				position: relative;
+				left: 160px;
+				bottom: 513px;}
+	.leftfoot {    width: 130px;
+    height: 70px;
+    border-radius: 100% 26% 40% 81%;
+    background-color: white;
+    border: solid;
+	position: relative;
+	bottom: 445px;
+	left: 20px;}
+	.rightfoot {    width: 130px;
+    height: 70px;
+    border-radius: 66% 140% 81% 50%;
+    background-color: white;
+    border: solid;
+	position: relative;
+	left: 150px;
+	bottom: 519px;}
+	.zqtzuo {width: 30px;
+	         height: 30px;
+			 border-radius: 50%;
+			 border: solid;
+			 background-color: gold;
+			 position: relative;
+			 bottom: 1023px;
+			 left: 135px;
+			 z-index: 100;}
+	.zqtgan {width: 5px;
+	         height:60px ;
+			 border: solid;
+			 background-color: gold;
+			 position: relative;
+			 bottom: 1100px;
+			 left: 147px;
+			 }
+	.shanye {width: 100px;
+	         height: 10px;
+			 border: solid;
+			 background-color: gold;
+			 position: relative;
+			 bottom: 1173px;
+			 left: 98px;
+			 transform: rotate(340deg);
+			 animation: shanye 0.05s;
+			 animation-iteration-count: infinite;
+			 }
+	
+	</style>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+	<div class="dlam">
+	<div class="tou">
+	<div class="face">
+	<div class="xiao"></div>
+	<div class="bm"></div>
+	<div class="lefthz1"></div>
+	<div class="lefthz2"></div>
+	<div class="lefthz3"></div>
+	<div class="righthz1"></div>
+	<div class="righthz2"></div>
+	<div class="righthz3"></div>
+	</div>
+	<div class="eyes1">
+	<div class="yj1">
+		<div class="yb"></div>
+	</div>
+	</div>
+	<div class="eyes2">
+	<div class="yj2"></div>
+	</div>
+	<div class="nose">
+		<div class="by"></div>
+	</div>
+	</div>
+	<div class="neck"></div>
+	<div class="shengti">
+		<div class="tuifeng1"></div>
+		<div class="tuifeng2"></div>
+	</div>
+	<div class="ld">
+		<div class="xld"></div>
+		<div class="dz"></div>
+		<div class="xd"></div>
+	</div>
+	<div class="dudou">
+		<div class="dabaiyuan"></div>
+		<div class="baibaodai"></div>
+		<div class="baibaodai2"></div>
+	</div>
+	<div class="lefthand"></div>
+	<div class="leftwhite"></div>
+	<div class="righthand"></div>
+	<div class="leftfoot"></div>
+	<div class="rightfoot"></div>
+<div class="zqt">
+	<div class="zqtzuo"></div>
+	<div class="zqtgan"></div>
+	<div class="shanye"></div>
+</div>
+	</div>
+	</body>
+</html>
